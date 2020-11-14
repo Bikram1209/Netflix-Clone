@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import Navbar from "./Navbar";
 import facebookLogo from "../Images/facebook-4.svg";
@@ -79,7 +79,7 @@ function Login({ FacebookCallback, user, EmailCallback }) {
     auth
       .signInWithPopup(facebookAuthProvider)
       .then((res) => FacebookCallback(res))
-      .catch((err) => console.log(err));
+      .catch((err) => alert(err.message));
   };
 
   return (

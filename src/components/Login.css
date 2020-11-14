@@ -105,3 +105,15 @@
 .login__modalForm > button {
   padding: 0.8em 4em;
 }
+@media screen and (min-width: 0) and (max-width: 600px) {
+  .login__content {
+    padding: 1em 1.5em;
+  }
+  .login__form > h3,
+  .login__modalForm > h3 {
+    font-size: 1.7rem;
+  }
+  .login__modalForm {
+    padding: 1em;
+  }
+}

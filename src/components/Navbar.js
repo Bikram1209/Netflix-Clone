@@ -27,7 +27,7 @@ function Navbar({ mainApp, callback, userfacebook }) {
 
   {
     return mainApp ? (
-      <div className={`navbar ${show && "show"}`}>
+      <div className={`navbar ${show ? "show" : ""}`}>
         <img
           className="navbar__logo"
           src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg"

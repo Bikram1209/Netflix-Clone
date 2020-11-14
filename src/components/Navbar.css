@@ -37,7 +37,7 @@
   width: 9em;
 }
 .navbar__btn {
-  padding: 0.5em 1.5em;
+  padding: 0.6em 1.5em;
   background-color: #e50914;
   font-size: 0.8rem;
   color: white;
@@ -52,4 +52,36 @@
 .navbar__btn:hover {
   box-shadow: 0 0 10px -6px rgba(0, 0, 0, 0.5);
   transform: scale(0.96);
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .navbar {
+    padding: 1.2em 1.5em;
+  }
+  .navbar__Signin {
+    padding: 1.3em 1.5em;
+  }
+  .navbar__right {
+    width: 6em;
+  }
+  .navbar__avatar {
+    height: 2em;
+  }
+  .navbar__logoSignin {
+    object-fit: contain;
+    height: 1.7em;
+  }
+  .navbar__btn {
+    padding: 1em 1.5em;
+    font-size: 0.6rem;
+    border-radius: 3px;
+  }
+  .navbar__right {
+    width: 7em;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 400px) {
+  .navbar {
+    padding: 1.2em 1em;
+  }
 }

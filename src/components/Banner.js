@@ -13,7 +13,7 @@ function Banner({ fetchUrl }) {
   }, [fetchUrl]);
 
   const ImageUrl = "https://image.tmdb.org/t/p/original/";
-  const randomMovie = movies[Math.floor(Math.random() * movies.length - 1)];
+  const randomMovie = movies[Math.floor(Math.random() * movies.length - 2)];
   const styles = {
     backgroundImage: `url(${ImageUrl}${randomMovie?.backdrop_path})`,
     backgroundSize: "cover",

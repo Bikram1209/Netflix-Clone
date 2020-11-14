@@ -1,4 +1,5 @@
-.navbar {
+.navbar,
+.navbar__Signin {
   padding: 1.2em 1.6em;
   width: 100%;
   display: flex;
@@ -10,9 +11,17 @@
   z-index: 100;
   transition: all 0.2s linear;
 }
+.navbar__Signin {
+  padding: 1.3em 3.1em;
+  justify-content: flex-start;
+}
 .navbar__logo {
   object-fit: contain;
   height: 1.3em;
+}
+.navbar__logoSignin {
+  object-fit: contain;
+  height: 2.2em;
 }
 .navbar__avatar {
   object-fit: contain;
@@ -20,4 +29,27 @@
 }
 .navbar.show {
   background-color: #111;
+}
+.navbar__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 9em;
+}
+.navbar__btn {
+  padding: 0.5em 1.5em;
+  background-color: #e50914;
+  font-size: 0.8rem;
+  color: white;
+  outline: none;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.25s linear;
+}
+.navbar__btn:hover {
+  box-shadow: 0 0 10px -6px rgba(0, 0, 0, 0.5);
+  transform: scale(0.96);
 }

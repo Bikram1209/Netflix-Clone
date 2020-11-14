@@ -11,7 +11,6 @@ function Banner({ fetchUrl }) {
     };
     fetchData();
   }, [fetchUrl]);
-  console.log(movies);
 
   const ImageUrl = "https://image.tmdb.org/t/p/original/";
   const randomMovie = movies[Math.floor(Math.random() * movies.length - 1)];

@@ -1,0 +1,107 @@
+.login {
+  height: 100vh;
+  background-image: url("../Images/Netflix-Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login__content {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.5);
+  padding: 2.5em 3em;
+  border-radius: 4px;
+}
+
+.login__form,
+.login__modalForm {
+  display: flex;
+  flex-direction: column;
+}
+.login__form > h3,
+.login__modalForm > h3 {
+  font-size: 2.05rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.6em;
+}
+.login__form > input,
+.login__modalForm > input {
+  padding: 0.8em 1.5em;
+  background-color: #333;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 0.95rem;
+  margin: 0.3em 0 !important;
+  color: #fafafa;
+}
+.login__form > button,
+.login__modalForm > button {
+  margin: 2.5em 0 4em 0;
+  color: white;
+  font-weight: bold;
+  background-color: #e50914;
+  border: 0;
+  padding: 0.8em 1.5em;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.login__facebook {
+  background-color: transparent;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  color: #fafafa;
+  font-size: 0.7rem;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 0.8em;
+}
+.login__facebook > p {
+  border-bottom: 1px solid transparent;
+}
+.login__facebook:focus {
+  border: 1px solid white;
+}
+.login__facebook > p:hover {
+  border-bottom: 1px solid #fafafa;
+}
+.login__facebookLogo {
+  object-fit: contain;
+  height: 1.4em;
+  margin-right: 0.6em;
+}
+.login__content > p {
+  color: #fafafa;
+  font-size: 0.8rem;
+}
+.login__content > p > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  margin-left: 0.5em;
+  border-bottom: 1px solid transparent;
+}
+.login__content > p > button:hover,
+.login__content > p > button:focus {
+  border-bottom: 1px solid #fafafa;
+}
+.login__modalForm {
+  background-color: #111;
+  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.75);
+  padding: 5em;
+  align-items: center;
+}
+.login__modalForm > h3 {
+  margin: 1em 0;
+}
+
+.login__modalForm > button {
+  padding: 0.8em 4em;
+}
